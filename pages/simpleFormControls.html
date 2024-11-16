@@ -6,54 +6,44 @@
     <title>simpleFormControls</title>
 </head>
 <body>
-   <ol>
-    <b><li>Формата преди да бъде попълнена:</li></b>
-    
-   <h1><b>Регистрация</b></h1>
+<b>1.Формата преди да бъде попълнена:</b>
+
+   <h1>Регистрация</h1>
    <form action="registration.py" method="get">
     <fieldset>
         <legend>Лични данни</legend>
         <div>Име: <input type="text" name="userName" autocomplete="off" autofocus placeholder="малко име,на латиница"></div>
-        <div>Име: <input type="text" name="userSurName" autocomplete="off" autofocus placeholder="фамилия,на латиница"></div>
+        <div>Име: <input type="text" name="userSurName" autocomplete="off" placeholder="фамилия,на латиница"></div>
         <div>
-         Пол: <label> мъж: <input type="radio" name="gender" value="m" id="gm"></label>
-         <label> жена:<input type="radio" name="gender" value="f" id="gf"></label>
+         Пол: <label> мъж: <input type="radio" name="gender" value="m"></label>
+         <label> жена:<input type="radio" name="gender" value="f"></label>
         </div>
     </fieldset>
     <b>Коментар:</b>
     <div>
-        <textarea name="coment" id="c" autofocus></textarea>
+        <textarea name="coment" id="c"></textarea>
     </div>
     <button>Изпрати</button>
    </form>
-   <div>
+
     <form action="registration.py" method="get">
-        <b><li>Попълнената форма, преди изпращането:</li></b>
+        <b>2.Попълнената форма, преди изпращането:</b>
         <h2>Регистрация</h2>
         <fieldset>
             <legend>Лични данни</legend>
-            <div>Име: <input type="text" name="userName" autocomplete="off" autofocus placeholder="малко име,на латиница"></div>
-            <div>Име: <input type="text" name="userSurName" autocomplete="off" autofocus placeholder="фамилия,на латиница"></div>
+            <div>Име: <input type="text" name="userName" autocomplete="off"  placeholder="малко име,на латиница"></div>
+            <div>Име: <input type="text" name="userSurName" autocomplete="off" placeholder="фамилия,на латиница">
             <div>
-             Пол: <label> мъж: <input type="radio" name="gender" value="m" id="gm"></label>
-             <label> жена:<input type="radio" name="gender" value="f" id="gf"></label>
-            </div>
-        </fieldset>
+             Пол: <label> мъж: <input type="radio" name="gender" value="m"></label>
+             <label> жена:<input type="radio" name="gender" value="f"></label>
+            </div></fieldset>
         <b>Коментар:</b>
         <div>
-            <textarea name="coment" id="c" autofocus></textarea>
+            <textarea name="coment"></textarea>
         </div>
         <button>Изпрати</button>
        </form>
-       <div>
-
-    </form>
-   </div>
-   <div>
-    <b><li>Генерирания от браузера URL, след натискане на бутона
-        "Изпрати" трябва да бъде:</li></b>http://127.0.0.1:3000/pages/registration.py?userName=Iva&userSurName=Popova&gender=f&coment=Your+site+is+awesome%21
-   </div>
-</ol>
-
+    <b>3.Генерирания от браузера URL, след натискане на бутона
+        "Изпрати" трябва да бъде:http://127.0.0.1:3000/pages/registration.py?userName=Iva&userSurName=Popova&gender=f&coment=Your+site+is+awesome%21</b>
 </body>
 </html>
